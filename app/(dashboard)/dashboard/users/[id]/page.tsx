@@ -4,6 +4,7 @@ interface PageProps {
   params: {
     id: string;
   };
+  searchParams?: { [key: string]: string };
 }
 
 const Page: React.FC<PageProps> = ({ params }) => {
